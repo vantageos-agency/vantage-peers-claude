@@ -13,7 +13,6 @@ What it gives you:
   - `message-my-agent`: Send a message to my agent in VantagePeers.
   - `remember-a-decision`: Record a decision in VantagePeers so that it is not lost.
   - `recall-what-was-decided`: Find what was decided or recorded in VantagePeers on a subject.
-  - `write-diary`: Write a diary entry in VantagePeers for today.
 
 VantagePeers Cloud only. Your data stays in your organisation's workspace.
 
