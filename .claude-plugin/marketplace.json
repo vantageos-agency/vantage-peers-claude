@@ -11,8 +11,8 @@
     {
       "name": "vantage-peers",
       "source": "./plugins/vantage-peers",
-      "description": "VantagePeers Cloud for Claude: shared memory, diary and status reports for your team's agents. Connects to your organisation's VantagePeers Cloud workspace; you sign in once with your VantagePeers account.",
-      "version": "2.12.0",
+      "description": "VantagePeers Cloud for Claude: see your open tasks, give tasks and messages to your agent, record decisions and find them again. Connects to your organisation's VantagePeers Cloud workspace; you sign in once with your VantagePeers account.",
+      "version": "2.13.0",
       "author": {
         "name": "VantageOS",
         "email": "hello@vantageos.agency"
