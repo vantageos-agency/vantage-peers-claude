@@ -1,0 +1,24 @@
+{
+  "name": "vantage-peers",
+  "version": "2.12.0",
+  "description": "VantagePeers Cloud for Claude: shared memory, diary and status reports for your team's agents. Connects to your organisation's VantagePeers Cloud workspace; you sign in once with your VantagePeers account.",
+  "author": {
+    "name": "VantageOS",
+    "email": "hello@vantageos.agency"
+  },
+  "homepage": "https://github.com/vantageos-agency/vantage-peers-claude",
+  "repository": "https://github.com/vantageos-agency/vantage-peers-claude",
+  "license": "FSL-1.1-Apache-2.0",
+  "keywords": [
+    "mcp",
+    "memory",
+    "agents",
+    "vantage-peers"
+  ],
+  "mcpServers": {
+    "vantage-peers": {
+      "type": "http",
+      "url": "https://mcp.vantagepeers.com/mcp"
+    }
+  }
+}
