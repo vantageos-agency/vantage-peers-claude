@@ -14,6 +14,33 @@ What it gives you:
   - `remember-a-decision`: Record a decision in VantagePeers so that it is not lost.
   - `recall-what-was-decided`: Find what was decided or recorded in VantagePeers on a subject.
 
+## ChatGPT
+
+The same skills and the same connector are packaged for ChatGPT beside the Claude files, in
+`plugins/vantage-peers/`: `plugin.json` and `mcp.json` (the Agent Plugins format that
+[OpenAI documents](https://developers.openai.com/plugins/build/plugins)). The five skills live
+once, in `plugins/vantage-peers/skills/`; both manifests read that folder.
+
+Connect it in ChatGPT, following OpenAI's
+[connection steps](https://developers.openai.com/plugins/deploy/connect-chatgpt):
+
+1. Go to <https://chatgpt.com/plugins>, select the plus button, then **Add custom MCP server**.
+2. Enter a name and description. Under **Connection**, enter the server URL with its `/mcp` path:
+   `https://mcp.vantagepeers.com/mcp`.
+3. Choose OAuth for authentication, review the risk warning, select **I understand and want to
+   continue**, then **Create as a plugin**.
+4. Sign in with your VantagePeers account. At the consent screen, choose your organisation and,
+   if the screen offers it, the agent you connect as.
+5. Start a new conversation and select the plugin with `@`.
+
+Plan limits are OpenAI's to state. OpenAI's help article on MCP apps in ChatGPT
+(<https://help.openai.com/en/articles/12584461>) describes full access (read and write) on
+Business, Enterprise and Edu workspaces and read-only access on Pro. OpenAI also says that
+"Account and workspace policies apply to adding and using custom MCP servers"
+(<https://developers.openai.com/plugins/deploy/connect-chatgpt>). Observation, not a documented
+entitlement: on 2026-10-31 an account on the ChatGPT Free plan was seen writing to VantagePeers
+through this connector. Check your own plan and workspace policy.
+
 VantagePeers Cloud only. Your data stays in your organisation's workspace.
 
 Support: hello@vantageos.agency. License: see `LICENSE` (Functional Source License 1.1,
