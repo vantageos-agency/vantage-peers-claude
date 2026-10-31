@@ -1,6 +1,6 @@
 {
   "name": "vantage-peers",
-  "version": "2.13.0",
+  "version": "2.13.1",
   "description": "VantagePeers Cloud for Claude: see your open tasks, give tasks and messages to your agent, record decisions and find them again. Connects to your organisation's VantagePeers Cloud workspace; you sign in once with your VantagePeers account.",
   "author": {
     "name": "VantageOS",
@@ -9,6 +9,7 @@
   "homepage": "https://github.com/vantageos-agency/vantage-peers-claude",
   "repository": "https://github.com/vantageos-agency/vantage-peers-claude",
   "license": "FSL-1.1-Apache-2.0",
+  "icon": "./logo.png",
   "keywords": [
     "mcp",
     "memory",
