@@ -33,13 +33,12 @@ Connect it in ChatGPT, following OpenAI's
    if the screen offers it, the agent you connect as.
 5. Start a new conversation and select the plugin with `@`.
 
-Plan limits are OpenAI's to state. OpenAI's help article on MCP apps in ChatGPT
-(<https://help.openai.com/en/articles/12584461>) describes full access (read and write) on
-Business, Enterprise and Edu workspaces and read-only access on Pro. OpenAI also says that
-"Account and workspace policies apply to adding and using custom MCP servers"
-(<https://developers.openai.com/plugins/deploy/connect-chatgpt>). Observation, not a documented
-entitlement: on 2026-10-31 an account on the ChatGPT Free plan was seen writing to VantagePeers
-through this connector. Check your own plan and workspace policy.
+Which ChatGPT plans can add and use a custom MCP server is OpenAI's to state; see
+<https://help.openai.com/en/articles/12584461> and
+<https://developers.openai.com/plugins/deploy/connect-chatgpt> ("Account and workspace policies
+apply to adding and using custom MCP servers"). What we observed: on 2026-10-31 an account on the
+ChatGPT Free plan connected through this connector and wrote to VantagePeers. Check your own plan
+and workspace policy.
 
 VantagePeers Cloud only. Your data stays in your organisation's workspace.
 
