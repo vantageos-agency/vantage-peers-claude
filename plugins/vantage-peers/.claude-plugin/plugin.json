@@ -10,6 +10,7 @@
   "repository": "https://github.com/vantageos-agency/vantage-peers-claude",
   "license": "FSL-1.1-Apache-2.0",
   "icon": "./logo.png",
+  "privacyPolicyUrl": "https://www.vantagepeers.com/privacy",
   "keywords": [
     "mcp",
     "memory",
