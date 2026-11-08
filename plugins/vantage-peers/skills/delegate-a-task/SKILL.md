@@ -25,14 +25,19 @@ Steps:
 3. Write a short title (one line) and, if useful, a description in the user's
    own words. Priority is "medium" unless the user asks for another (urgent,
    high, medium or low).
-4. Show the user what will be created: for whom, the title, the description, the
-   priority, the due date if any. Ask: "Shall I create it?" Create nothing
-   without a clear yes.
-5. On yes, call `create_task` with title, description, assignedTo set to the
-   agent's name, assignedToAgentId set to the agent ID from `list_peers`,
+4. Every task belongs to a project. If the user named one, use it. Otherwise
+   call `list_tasks` with fields="full" and limit 5 to read your recent tasks
+   (the default short view does not include the project), and take the project
+   of the most recent one as the proposal. If none of them has a project, ask
+   the user for a project name. Never invent one.
+5. Show the user what will be created: for whom, the title, the description, the
+   project, the priority, the due date if any. Ask: "Shall I create it?" Create
+   nothing without a clear yes. If the user changes the project, use theirs.
+6. On yes, call `create_task` with title, description, project, assignedTo set
+   to the agent's name, assignedToAgentId set to the agent ID from `list_peers`,
    priority, and dueDate (in milliseconds) only if a date was given. Do not pass
    createdBy: a signed-in person acts in their own name.
-6. Confirm in one sentence with the title the tool returned.
+7. Confirm in one sentence with the title the tool returned.
 
 Rules:
 
@@ -64,15 +69,21 @@ reste.
 3. Rédiger un titre court (une ligne) et, si c'est utile, une description avec
    les mots de l'utilisateur. La priorité est « medium » (normale), sauf si
    l'utilisateur en demande une autre (urgent, high, medium ou low).
-4. Montrer à l'utilisateur ce qui va être créé : pour qui, le titre, la
-   description, la priorité, l'échéance éventuelle. Demander : « Je la crée ? »
-   Ne rien créer sans un oui clair.
-5. Sur un oui, appeler `create_task` avec title, description, assignedTo égal au
-   nom de l'agent, assignedToAgentId égal à l'identifiant d'agent lu dans
-   `list_peers`, priority, et dueDate (en millisecondes) seulement si une date a
-   été donnée. Ne pas passer createdBy : une personne connectée agit en son
-   propre nom.
-6. Confirmer en une phrase, avec le titre renvoyé par l'outil.
+4. Chaque tâche appartient à un projet. Si l'utilisateur en a nommé un, le
+   prendre. Sinon, appeler `list_tasks` avec fields="full" et limit 5 pour lire
+   vos tâches récentes (la vue courte par défaut n'inclut pas le projet), et
+   proposer le projet de la plus récente. Si aucune n'a de projet, demander à
+   l'utilisateur un nom de projet. Ne jamais en inventer un.
+5. Montrer à l'utilisateur ce qui va être créé : pour qui, le titre, la
+   description, le projet, la priorité, l'échéance éventuelle. Demander : « Je la
+   crée ? » Ne rien créer sans un oui clair. Si l'utilisateur change de projet,
+   prendre le sien.
+6. Sur un oui, appeler `create_task` avec title, description, project,
+   assignedTo égal au nom de l'agent, assignedToAgentId égal à l'identifiant
+   d'agent lu dans `list_peers`, priority, et dueDate (en millisecondes)
+   seulement si une date a été donnée. Ne pas passer createdBy : une personne
+   connectée agit en son propre nom.
+7. Confirmer en une phrase, avec le titre renvoyé par l'outil.
 
 Règles :
 
