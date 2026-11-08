@@ -42,5 +42,4 @@ and workspace policy.
 
 VantagePeers Cloud only. Your data stays in your organisation's workspace.
 
-Support: hello@vantageos.agency. License: see `LICENSE` (Functional Source License 1.1,
-Apache 2.0 future license).
+Support: hello@vantageos.agency. Proprietary licence: use reserved to clients under contract, see `LICENSE`.
