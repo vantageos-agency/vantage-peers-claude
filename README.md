@@ -13,6 +13,8 @@ What it gives you:
   - `message-my-agent`: Send a message to my agent in VantagePeers.
   - `remember-a-decision`: Record a decision in VantagePeers so that it is not lost.
   - `recall-what-was-decided`: Find what was decided or recorded in VantagePeers on a subject.
+- Slash commands, one per skill: type `/vantage-peers:<skill>` followed by what you want
+  (for example `/vantage-peers:remember-a-decision we keep the Thursday meeting`).
 
 ## ChatGPT
 
