@@ -1,6 +1,6 @@
 {
   "name": "vantage-peers",
-  "version": "2.13.3",
+  "version": "2.14.0",
   "description": "VantagePeers Cloud for Claude: see your open tasks, give tasks and messages to your agent, record decisions and find them again. Connects to your organisation's VantagePeers Cloud workspace; you sign in once with your VantagePeers account.",
   "author": {
     "name": "VantageOS",
